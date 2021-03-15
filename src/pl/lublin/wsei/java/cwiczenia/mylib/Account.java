@@ -3,7 +3,7 @@ package pl.lublin.wsei.java.cwiczenia.mylib;
 import org.apache.commons.lang3.StringUtils;
 
 public class Account {
-    public String name;
+//    public String name;
 
     private static char ukrAlphabet[] = {'а', 'б', 'в', 'г', 'д', 'е', 'є', 'ж', 'з', 'и', 'і', 'ї', 'й', 'к', 'л', 'м', 'н', 'о',
             'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ь', 'ю', 'я'};
@@ -27,6 +27,7 @@ public class Account {
         }
         return builder.toString();
     }
+
 
 
 //    public static String capitalize(String aStr)

@@ -2,6 +2,7 @@ package pl.lublin.wsei.java.cwiczenia;
 
 import pl.lublin.wsei.java.cwiczenia.mylib.Account;
 
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -36,7 +37,7 @@ public class Main {
 
 //      trasnlit
 
-       System.out.printf("%s%n",Account.translit("янь"));
+       System.out.printf("%s%n",Account.translit("просопчук"));
       }
 
     }
