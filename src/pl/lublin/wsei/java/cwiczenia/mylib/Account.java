@@ -1,12 +1,15 @@
 package pl.lublin.wsei.java.cwiczenia.mylib;
+
 import org.apache.commons.lang3.StringUtils;
 
 public class Account {
-    private String name;
+    public String name;
 
-    private static char ukrAlphabet[] = {'а', 'б', 'в', 'г', 'д', 'е', 'є', 'ж', 'з', 'и', 'і', 'ї', 'й', 'к', 'л', 'м', 'н', 'о', 'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ь', 'ю', 'я'};
+    private static char ukrAlphabet[] = {'а', 'б', 'в', 'г', 'д', 'е', 'є', 'ж', 'з', 'и', 'і', 'ї', 'й', 'к', 'л', 'м', 'н', 'о',
+            'п', 'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ', 'ь', 'ю', 'я'};
 
-    private static String translitPL[] = {"a","b","v","g","d","e","je","zh","z","y","i","ji", "j","k","l","m","n","o","p","r","s","t","u","f","h","c", "ch","sh","shh","'","ju","ja"};
+    private static String translitPL[] = {"a","b","v","g","d","e","je","zh","z","y","i","ji", "j","k","l","m","n","o",
+            "p","r","s","t","u","f","h","c", "ch","sh","shh","'","ju","ja"};
 
     public static String translit(String arg)
     {
@@ -26,19 +29,22 @@ public class Account {
     }
 
 
-    public static String capitalize(String aStr)
-    {
-        String[] tokens = StringUtils.split(aStr);
-        for(int i = 0; i < tokens.length; i++)
-            tokens[i] = StringUtils.capitalize(tokens[i]);
-        return StringUtils.join(tokens,' ');
-    }
-    public void setName(String name) {
-        this.name = capitalize(name);
-    }
-
-    public String getName() {
-        return name;
-    }
+//    public static String capitalize(String aStr)
+//    {
+//        String[] tokens = StringUtils.split(aStr);
+//        for(int i = 0; i < tokens.length; i++)
+//            tokens[i] = StringUtils.capitalize(tokens[i]);
+//        return StringUtils.join(tokens,' ');
+//    }
+//    public void setName(String name) {
+//        String[] tokens = StringUtils.split(name);
+//        for(int i = 0; i < tokens.length; i++)
+//            tokens[i] = StringUtils.capitalize(tokens[i]);
+//        this.name = StringUtils.join(tokens,' ');
+//    }
+//
+//    public String getName() {
+//        return name;
+//    }
 
 }
